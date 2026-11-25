@@ -29,7 +29,7 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
-    "hono": "^4.13.19",
+    "hono": "^4.13.20",
     "zod": "3"
   },
   "devDependencies": {
