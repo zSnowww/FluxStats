@@ -21,7 +21,7 @@ const svg = (body: string, cacheControl: string) =>
     headers: { 'Content-Type': 'image/svg+xml; charset=utf-8', 'Cache-Control': cacheControl },
   });
 
-function serveDecor<S extends z.ZodType<CardOptions, z.ZodTypeDef, unknown>>(
+function serveDecor<S extends z.ZodType<CardOptions, unknown>>(
   c: Context,
   schema: S,
   render: (query: z.output<S>, theme: Theme) => string,

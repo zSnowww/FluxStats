@@ -5,9 +5,13 @@ import { ICON_NAMES } from '@/cards/icons';
 // z.coerce.boolean() treats "false" as true; query params need this instead.
 const queryBoolean = (fallback: boolean) =>
   z
-    .enum(['true', 'false', '1', '0', ''])
+    .enum(['true', 'false', '1', '0', ''], { error: 'Must be true or false' })
     .optional()
     .transform((v) => (v === undefined ? fallback : v === 'true' || v === '1' || v === ''));
+
+/** Card-sized message for a missing parameter; other issues keep zod's message. */
+const requiredString = (message = 'Required') =>
+  z.string({ error: (issue) => (issue.input === undefined ? message : undefined) });
 
 const hexColor = z
   .string()
@@ -15,7 +19,7 @@ const hexColor = z
   .transform((v) => (v.startsWith('#') ? v : `#${v}`));
 
 export const ThemeNameSchema = z
-  .enum(THEME_NAMES, { errorMap: () => ({ message: 'Unknown theme' }) })
+  .enum(THEME_NAMES, { error: 'Unknown theme' })
   .default(DEFAULT_THEME);
 
 export const CardOptionsSchema = z.object({
@@ -30,8 +34,7 @@ export const CardOptionsSchema = z.object({
   border_color: hexColor.optional(),
 });
 
-const username = z
-  .string()
+const username = requiredString('Username is required')
   .min(1, 'Username is required')
   .max(39)
   .regex(/^[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/, 'Invalid GitHub username');
@@ -99,12 +102,11 @@ export type ContributionsQuery = z.infer<typeof ContributionsQuerySchema>;
 
 // ── Decoration (does not query GitHub) ──
 
-const shortText = (max: number) => z.string().trim().min(1).max(max);
+const shortText = (max: number) => requiredString().trim().min(1).max(max);
 
 export const TerminalQuerySchema = CardOptionsSchema.extend({
   /** Lines separated by `;` */
-  lines: z
-    .string()
+  lines: requiredString()
     .transform((v) =>
       v
         .split(';')
