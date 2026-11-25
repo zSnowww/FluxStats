@@ -49,10 +49,7 @@ const publicMessage = (err: AppError) =>
   err.code === 'INTERNAL_SERVER_ERROR' ? 'Server misconfigured' : err.message;
 
 /** Flow shared by every card: validate query → fetch data → render SVG. */
-async function serveCard<
-  S extends z.ZodType<CardOptions & { username: string }, z.ZodTypeDef, unknown>,
-  D,
->(
+async function serveCard<S extends z.ZodType<CardOptions & { username: string }, unknown>, D>(
   c: Context,
   schema: S,
   load: (username: string) => Promise<Result<D, AppError>>,
