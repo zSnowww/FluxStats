@@ -1,0 +1,11 @@
+# Never upload local secrets
+.env
+.env.*
+!.env.example
+
+# Development only
+preview/
+tests/
+scripts/*
+!scripts/build-vercel.ts
+node_modules/

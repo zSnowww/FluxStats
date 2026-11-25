@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="322" viewBox="0 0 450 322" fill="none" role="img" aria-labelledby="t">
+  <title id="t">Activity</title>
+  <style>
+    text { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; font-variant-numeric: tabular-nums }
+    .title { font-size: 16px; font-weight: 600; fill: #e6e8eb }
+    .subtitle { font-size: 12px; fill: #7c8491 }
+    .label { font-size: 13px; fill: #a3aab5 }
+    .value { font-size: 13px; font-weight: 600; fill: #e6e8eb }
+    .small { font-size: 11px; fill: #7c8491 }
+    .stat { font-size: 20px; font-weight: 600; fill: #e6e8eb }
+    .unit { font-size: 12px; font-weight: 400; fill: #7c8491 }
+    .strong { font-weight: 600; fill: #a3aab5 }
+    .icon { stroke: #8fa8c8; stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; fill: none }
+    
+    @keyframes enter { from { opacity: 0; transform: translateY(3px) } to { opacity: 1; transform: none } }
+    @keyframes grow { from { transform: scaleX(0) } }
+    @keyframes fade { from { opacity: 0 } }
+    @keyframes draw { from { stroke-dashoffset: 1 } }
+    .row { animation: enter .5s cubic-bezier(.25,.46,.45,.94) both }
+    .bar { transform-box: fill-box; transform-origin: left; animation: grow 1.4s cubic-bezier(.12,.88,.2,1) .4s both }
+    .fade { animation: fade .8s ease-out both }
+    .draw { stroke-dasharray: 1; animation: draw 1.6s cubic-bezier(.4,0,.2,1) .2s both }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important } }
+    
+  </style>
+  <rect x="0.5" y="0.5" rx="6" width="449" height="321" fill="#0f1115"
+    stroke="#252a33" stroke-opacity="1"/>
+  <text class="title" x="24" y="34">Activity</text>
+  <text class="subtitle" x="24" y="52">@octocat · 1,289 contributions in the past year</text>
+  <rect x="24" y="66" width="402" height="1" fill="#252a33"/>
+  <rect x="54" y="200.0" width="372" height="1" fill="#252a33"/>
+    <text class="small" x="46" y="204.0" text-anchor="end">0</text>
+<rect x="54" y="150.0" width="372" height="1" fill="#252a33"/>
+    <text class="small" x="46" y="154.0" text-anchor="end">40</text>
+<rect x="54" y="100.0" width="372" height="1" fill="#252a33"/>
+    <text class="small" x="46" y="104.0" text-anchor="end">80</text>
+  <path class="fade" style="animation-delay:.6s" d="M54.0,172.5L61.2,171.3L68.3,175.0L75.5,181.3L82.6,160.0L89.8,170.0L96.9,157.5L104.1,187.5L111.2,173.8L118.4,171.3L125.5,168.8L132.7,170.0L139.8,177.5L147.0,178.8L154.2,186.3L161.3,151.3L168.5,158.8L175.6,166.3L182.8,156.3L189.9,157.5L197.1,150.0L204.2,123.8L211.4,161.3L218.5,145.0L225.7,166.3L232.8,152.5L240.0,160.0L247.2,133.8L254.3,168.8L261.5,177.5L268.6,190.0L275.8,182.5L282.9,181.3L290.1,173.8L297.2,181.3L304.4,171.3L311.5,166.3L318.7,185.0L325.8,172.5L333.0,160.0L340.2,162.5L347.3,171.3L354.5,186.3L361.6,162.5L368.8,193.8L375.9,166.3L383.1,176.3L390.2,185.0L397.4,180.0L404.5,177.5L411.7,177.5L418.8,170.0L426.0,186.3L426.0,200L54,200Z" fill="#8fa8c8" fill-opacity="0.12"/>
+  <path class="draw" pathLength="1" d="M54.0,172.5L61.2,171.3L68.3,175.0L75.5,181.3L82.6,160.0L89.8,170.0L96.9,157.5L104.1,187.5L111.2,173.8L118.4,171.3L125.5,168.8L132.7,170.0L139.8,177.5L147.0,178.8L154.2,186.3L161.3,151.3L168.5,158.8L175.6,166.3L182.8,156.3L189.9,157.5L197.1,150.0L204.2,123.8L211.4,161.3L218.5,145.0L225.7,166.3L232.8,152.5L240.0,160.0L247.2,133.8L254.3,168.8L261.5,177.5L268.6,190.0L275.8,182.5L282.9,181.3L290.1,173.8L297.2,181.3L304.4,171.3L311.5,166.3L318.7,185.0L325.8,172.5L333.0,160.0L340.2,162.5L347.3,171.3L354.5,186.3L361.6,162.5L368.8,193.8L375.9,166.3L383.1,176.3L390.2,185.0L397.4,180.0L404.5,177.5L411.7,177.5L418.8,170.0L426.0,186.3" stroke="#8fa8c8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <g class="fade" style="animation-delay:1.4s">
+    <circle cx="204.2" cy="123.8" r="4" fill="#8fa8c8" stroke="#0f1115" stroke-width="2"/>
+    <text class="small strong" x="204.2" y="113.8" text-anchor="middle">61</text>
+  </g>
+  <text class="small" x="75.5" y="218" text-anchor="middle">Dec</text><text class="small" x="104.1" y="218" text-anchor="middle">Jan</text><text class="small" x="132.7" y="218" text-anchor="middle">Feb</text><text class="small" x="161.3" y="218" text-anchor="middle">Mar</text><text class="small" x="197.1" y="218" text-anchor="middle">Apr</text><text class="small" x="225.7" y="218" text-anchor="middle">May</text><text class="small" x="261.5" y="218" text-anchor="middle">Jun</text><text class="small" x="290.1" y="218" text-anchor="middle">Jul</text><text class="small" x="318.7" y="218" text-anchor="middle">Aug</text><text class="small" x="354.5" y="218" text-anchor="middle">Sep</text><text class="small" x="383.1" y="218" text-anchor="middle">Oct</text><text class="small" x="411.7" y="218" text-anchor="middle">Nov</text>
+  <rect x="24" y="234" width="402" height="1" fill="#252a33"/>
+<g class="row" style="animation-delay:900ms">
+      <text class="stat" x="24" y="266">3<tspan class="unit" dx="4">days</tspan></text>
+      <text class="small strong" x="24" y="284">Current streak</text>
+      <text class="small" x="24" y="300">Nov 16 – Nov 18</text>
+    </g>
+<g class="row" style="animation-delay:980ms">
+      <text class="stat" x="158" y="266">10<tspan class="unit" dx="4">days</tspan></text>
+      <text class="small strong" x="158" y="284">Longest streak</text>
+      <text class="small" x="158" y="300">Aug 24 – Sep 2</text>
+    </g>
+<g class="row" style="animation-delay:1060ms">
+      <text class="stat" x="292" y="266">61</text>
+      <text class="small strong" x="292" y="284">Peak week</text>
+      <text class="small" x="292" y="300">Week of Apr 12</text>
+    </g>
+</svg>

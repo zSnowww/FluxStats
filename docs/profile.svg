@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="370" viewBox="0 0 720 370" fill="none" role="img" aria-labelledby="t">
+  <title id="t">The Octocat</title>
+  <style>
+    text { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; font-variant-numeric: tabular-nums }
+    .title { font-size: 16px; font-weight: 600; fill: #e6e8eb }
+    .subtitle { font-size: 12px; fill: #7c8491 }
+    .label { font-size: 13px; fill: #a3aab5 }
+    .value { font-size: 13px; font-weight: 600; fill: #e6e8eb }
+    .small { font-size: 11px; fill: #7c8491 }
+    .stat { font-size: 20px; font-weight: 600; fill: #e6e8eb }
+    .unit { font-size: 12px; font-weight: 400; fill: #7c8491 }
+    .strong { font-weight: 600; fill: #a3aab5 }
+    .icon { stroke: #8fa8c8; stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; fill: none }
+    
+    @keyframes enter { from { opacity: 0; transform: translateY(3px) } to { opacity: 1; transform: none } }
+    @keyframes grow { from { transform: scaleX(0) } }
+    @keyframes fade { from { opacity: 0 } }
+    @keyframes draw { from { stroke-dashoffset: 1 } }
+    .row { animation: enter .5s cubic-bezier(.25,.46,.45,.94) both }
+    .bar { transform-box: fill-box; transform-origin: left; animation: grow 1.4s cubic-bezier(.12,.88,.2,1) .4s both }
+    .fade { animation: fade .8s ease-out both }
+    .draw { stroke-dasharray: 1; animation: draw 1.6s cubic-bezier(.4,0,.2,1) .2s both }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important } }
+    
+  </style>
+  <rect x="0.5" y="0.5" rx="6" width="719" height="369" fill="#0f1115"
+    stroke="#252a33" stroke-opacity="1"/>
+  <text class="title" x="24" y="34">The Octocat</text>
+  <text class="subtitle" x="24" y="52">@octocat</text>
+  <rect x="24" y="66" width="672" height="1" fill="#252a33"/>
+  <g class="row" style="animation-delay:60ms">
+      <g class="icon" transform="translate(24, 82)"><path d="M8 1.8l1.9 4 4.3.5-3.2 2.9.9 4.3L8 11.3l-3.9 2.2.9-4.3-3.2-2.9 4.3-.5z"/></g>
+      <text class="label" x="50" y="94">Stars earned</text>
+      <text class="value" x="344" y="94" text-anchor="end">12.5k</text>
+    </g>
+<g class="row" style="animation-delay:120ms">
+      <g class="icon" transform="translate(24, 106)"><circle cx="8" cy="8" r="2.6"/><path d="M1.5 8h3.9M10.6 8h3.9"/></g>
+      <text class="label" x="50" y="118">Commits (past year)</text>
+      <text class="value" x="344" y="118" text-anchor="end">1.3k</text>
+    </g>
+<g class="row" style="animation-delay:180ms">
+      <g class="icon" transform="translate(24, 130)"><circle cx="4" cy="3.5" r="1.7"/><circle cx="4" cy="12.5" r="1.7"/><circle cx="12" cy="12.5" r="1.7"/><path d="M4 5.2v5.6M12 10.8V6.5a2 2 0 0 0-2-2H7.5M9 3L7.5 4.5 9 6"/></g>
+      <text class="label" x="50" y="142">Pull requests</text>
+      <text class="value" x="344" y="142" text-anchor="end">218</text>
+    </g>
+<g class="row" style="animation-delay:240ms">
+      <g class="icon" transform="translate(24, 154)"><circle cx="8" cy="8" r="6"/><circle cx="8" cy="8" r=".9"/></g>
+      <text class="label" x="50" y="166">Issues</text>
+      <text class="value" x="344" y="166" text-anchor="end">96</text>
+    </g>
+<g class="row" style="animation-delay:300ms">
+      <g class="icon" transform="translate(24, 178)"><path d="M3.5 12.5V3A1.5 1.5 0 0 1 5 1.5h7.5v10H5a1.5 1.5 0 0 0 0 3h7.5"/></g>
+      <text class="label" x="50" y="190">Contributed to</text>
+      <text class="value" x="344" y="190" text-anchor="end">41</text>
+    </g>
+<g class="row" style="animation-delay:360ms">
+    <text class="small strong" x="24" y="224">Rank A+</text>
+    <text class="small" x="344" y="224" text-anchor="end">Top 8.4%</text>
+  </g>
+  <rect x="24" y="234" width="320" height="4" rx="2" fill="#252a33"/>
+  <rect class="bar" x="24" y="234" width="293.1" height="4" rx="2" fill="#8fa8c8"/>
+<rect x="364" y="80" width="1" height="178" fill="#252a33"/>
+<text class="small strong" x="384" y="94">Top languages</text>
+<defs><clipPath id="profile-langs"><rect x="384" y="106" width="312" height="8" rx="4"/></clipPath></defs>
+  <g class="bar" clip-path="url(#profile-langs)"><rect x="384.0" y="106" width="150.8" height="8" fill="#8fa8c8"/><rect x="536.8" y="106" width="75.4" height="8" fill="#8fa8c8" fill-opacity="0.78"/><rect x="614.2" y="106" width="33.6" height="8" fill="#8fa8c8" fill-opacity="0.6"/><rect x="649.8" y="106" width="21.3" height="8" fill="#8fa8c8" fill-opacity="0.46"/><rect x="673.1" y="106" width="7.4" height="8" fill="#8fa8c8" fill-opacity="0.36"/><rect x="682.4" y="106" width="5.7" height="8" fill="#8fa8c8" fill-opacity="0.28"/><rect x="690.2" y="106" width="5.8" height="8" fill="#7c8491" fill-opacity="0.45"/></g>
+<g class="row" style="animation-delay:200ms">
+      <circle cx="388" cy="133.5" r="4" fill="#8fa8c8"/>
+      <text class="label" x="400" y="138">TypeScript</text>
+      <text class="value" x="696" y="138" text-anchor="end">50%</text>
+    </g>
+<g class="row" style="animation-delay:250ms">
+      <circle cx="388" cy="153.5" r="4" fill="#8fa8c8" fill-opacity="0.78"/>
+      <text class="label" x="400" y="158">Python</text>
+      <text class="value" x="696" y="158" text-anchor="end">25%</text>
+    </g>
+<g class="row" style="animation-delay:300ms">
+      <circle cx="388" cy="173.5" r="4" fill="#8fa8c8" fill-opacity="0.6"/>
+      <text class="label" x="400" y="178">Go</text>
+      <text class="value" x="696" y="178" text-anchor="end">11%</text>
+    </g>
+<g class="row" style="animation-delay:350ms">
+      <circle cx="388" cy="193.5" r="4" fill="#8fa8c8" fill-opacity="0.46"/>
+      <text class="label" x="400" y="198">Rust</text>
+      <text class="value" x="696" y="198" text-anchor="end">7.1%</text>
+    </g>
+<g class="row" style="animation-delay:400ms">
+      <circle cx="388" cy="213.5" r="4" fill="#8fa8c8" fill-opacity="0.36"/>
+      <text class="label" x="400" y="218">Shell</text>
+      <text class="value" x="696" y="218" text-anchor="end">2.5%</text>
+    </g>
+<g class="row" style="animation-delay:450ms">
+      <circle cx="388" cy="233.5" r="4" fill="#8fa8c8" fill-opacity="0.28"/>
+      <text class="label" x="400" y="238">CSS</text>
+      <text class="value" x="696" y="238" text-anchor="end">1.9%</text>
+    </g>
+<g class="row" style="animation-delay:500ms">
+      <circle cx="388" cy="253.5" r="4" fill="#7c8491" fill-opacity="0.45"/>
+      <text class="label" x="400" y="258">Other</text>
+      <text class="value" x="696" y="258" text-anchor="end">1.9%</text>
+    </g>
+<rect x="24" y="282" width="672" height="1" fill="#252a33"/>
+<g class="row" style="animation-delay:900ms">
+      <text class="stat" x="24" y="314">1,289</text>
+      <text class="small strong" x="24" y="332">Contributions</text>
+      <text class="small" x="24" y="348">Past year</text>
+    </g>
+<g class="row" style="animation-delay:980ms">
+      <text class="stat" x="192" y="314">3<tspan class="unit" dx="4">days</tspan></text>
+      <text class="small strong" x="192" y="332">Current streak</text>
+      <text class="small" x="192" y="348">Nov 16 – Nov 18</text>
+    </g>
+<g class="row" style="animation-delay:1060ms">
+      <text class="stat" x="360" y="314">10<tspan class="unit" dx="4">days</tspan></text>
+      <text class="small strong" x="360" y="332">Longest streak</text>
+      <text class="small" x="360" y="348">Aug 24 – Sep 2</text>
+    </g>
+<g class="row" style="animation-delay:1140ms">
+      <text class="stat" x="528" y="314">61</text>
+      <text class="small strong" x="528" y="332">Peak week</text>
+      <text class="small" x="528" y="348">Week of Apr 12</text>
+    </g>
+</svg>

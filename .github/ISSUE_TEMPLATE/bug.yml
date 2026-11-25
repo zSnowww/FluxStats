@@ -1,0 +1,21 @@
+name: Bug report
+description: Something renders wrong or fails
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Card URL
+      description: Path and parameters. Remove anything private.
+      placeholder: /api/github/stats?username=octocat&theme=graphite
+  - type: input
+    id: where
+    attributes:
+      label: Where does it run?
+      placeholder: Vercel, Bun 1.4.3 on Linux…

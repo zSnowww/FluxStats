@@ -1,0 +1,40 @@
+{
+  "name": "fluxstats",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Dynamic SVG cards for your GitHub README",
+  "license": "MIT",
+  "homepage": "https://github.com/zSnowww/FluxStats#readme",
+  "bugs": "https://github.com/zSnowww/FluxStats/issues",
+  "keywords": [
+    "github-readme",
+    "github-stats",
+    "svg",
+    "hono",
+    "bun"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zSnowww/FluxStats.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/bun.ts",
+    "start": "bun src/bun.ts",
+    "test": "bun test",
+    "preview": "bun scripts/preview.ts",
+    "build:vercel": "bun scripts/build-vercel.ts",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "hono": "^4.13.19",
+    "zod": "3"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.4",
+    "prettier": "^3.10.1",
+    "typescript": "^7.0.2"
+  }
+}
