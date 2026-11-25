@@ -2,6 +2,13 @@
 
 This project follows [Semantic Versioning](https://semver.org).
 
+## 0.1.1 - 2026-11-25
+
+- Security: update zod to 4.6.7 (GHSA-mrhx-c7xc-m3w5).
+- Invalid boolean parameters now show "Must be true or false". Some other validation messages use
+  zod 4's wording.
+- Update hono to 4.13.20.
+
 ## 0.1.0 - 2026-11-25
 
 First public release.
